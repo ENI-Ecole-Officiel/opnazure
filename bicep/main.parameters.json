@@ -38,7 +38,7 @@
       "value": "Standard"
     },
     "OpnScriptURI": {
-      "value": "https://raw.githubusercontent.com/dmauser/opnazure/master/scripts/"
+      "value": "https://raw.githubusercontent.com/ENI-Ecole-Officiel/opnazure/refs/heads/AddTagsManagment/scripts/"
     },
     "ShellScriptName": {
       "value": "configureopnsense.sh"
