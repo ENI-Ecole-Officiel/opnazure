@@ -973,7 +973,7 @@
                 },
                 "storageProfile": {
                   "osDisk": {
-                    "createOption": "FromImage"
+                    "createOption": "FromImage",
 		    "managedDisk": {
       			"storageAccountType": "Standard_HDD"
     		    },
@@ -1448,7 +1448,7 @@
                 },
                 "storageProfile": {
                   "osDisk": {
-                    "createOption": "FromImage"
+                    "createOption": "FromImage",
 		    "managedDisk": {
       			"storageAccountType": "Standard_HDD"
     		    },
@@ -1918,7 +1918,7 @@
                 },
                 "storageProfile": {
                   "osDisk": {
-                    "createOption": "FromImage"
+                    "createOption": "FromImage",
 		    "managedDisk": {
       			"storageAccountType": "Standard_HDD"
     		    },
@@ -2627,7 +2627,7 @@
                 },
                 "storageProfile": {
                   "osDisk": {
-                    "createOption": "FromImage"
+                    "createOption": "FromImage",
 		    "managedDisk": {
       			"storageAccountType": "Standard_HDD"
     		    },
