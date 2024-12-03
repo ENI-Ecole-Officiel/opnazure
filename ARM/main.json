@@ -271,7 +271,10 @@
               "location": "[parameters('Location')]",
               "properties": {
                 "securityRules": "[parameters('securityRules')]"
-              }
+              },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -341,7 +344,10 @@
                   "addressPrefixes": "[parameters('vnetAddressSpace')]"
                 },
                 "subnets": "[parameters('subnets')]"
-              }
+              },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -421,7 +427,10 @@
               "name": "[parameters('publicipName')]",
               "location": "[parameters('location')]",
               "sku": "[parameters('publicipsku')]",
-              "properties": "[parameters('publicipproperties')]"
+              "properties": "[parameters('publicipproperties')]",
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -622,7 +631,10 @@
                 "inboundNatRules": "[parameters('inboundNatRules')]",
                 "probes": "[parameters('probe')]",
                 "outboundRules": "[parameters('outboundRules')]"
-              }
+              },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -784,7 +796,10 @@
                 "inboundNatRules": "[parameters('inboundNatRules')]",
                 "probes": "[parameters('probe')]",
                 "outboundRules": "[parameters('outboundRules')]"
-              }
+              },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -979,7 +994,10 @@
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
                 "[resourceId('Microsoft.Resources/deployments', variables('untrustedNicName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -1225,7 +1243,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
@@ -2360,7 +2381,10 @@
               "name": "[parameters('publicipName')]",
               "location": "[parameters('location')]",
               "sku": "[parameters('publicipsku')]",
-              "properties": "[parameters('publicipproperties')]"
+              "properties": "[parameters('publicipproperties')]",
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
