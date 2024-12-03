@@ -975,7 +975,7 @@
                   "osDisk": {
                     "createOption": "FromImage",
 		    "managedDisk": {
-      			"storageAccountType": "Standard_HDD"
+      			"storageAccountType": "Standard_LRS"
     		    },
 		    "diskSizeGB": 32
                   },
@@ -1450,7 +1450,7 @@
                   "osDisk": {
                     "createOption": "FromImage",
 		    "managedDisk": {
-      			"storageAccountType": "Standard_HDD"
+      			"storageAccountType": "Standard_LRS"
     		    },
 		    "diskSizeGB": 32
                   },
@@ -1473,7 +1473,10 @@
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
                 "[resourceId('Microsoft.Resources/deployments', variables('untrustedNicName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		  }
             },
             {
               "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -1598,7 +1601,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+					  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
@@ -1719,7 +1725,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+					  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
@@ -1920,7 +1929,7 @@
                   "osDisk": {
                     "createOption": "FromImage",
 		    "managedDisk": {
-      			"storageAccountType": "Standard_HDD"
+      			"storageAccountType": "Standard_LRS"
     		    },
 		    "diskSizeGB": 32
                   },
@@ -1943,7 +1952,10 @@
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]",
                 "[resourceId('Microsoft.Resources/deployments', variables('untrustedNicName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -2068,7 +2080,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+					  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
@@ -2189,7 +2204,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+					  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
@@ -2315,7 +2333,10 @@
               "location": "[parameters('Location')]",
               "properties": {
                 "securityRules": "[parameters('securityRules')]"
-              }
+              },
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -2459,7 +2480,10 @@
               "type": "Microsoft.Network/routeTables",
               "apiVersion": "2023-05-01",
               "name": "[parameters('rtName')]",
-              "location": "[parameters('location')]"
+              "location": "[parameters('location')]",
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             }
           ],
           "outputs": {
@@ -2629,7 +2653,7 @@
                   "osDisk": {
                     "createOption": "FromImage",
 		    "managedDisk": {
-      			"storageAccountType": "Standard_HDD"
+      			"storageAccountType": "Standard_LRS"
     		    },
 		    "diskSizeGB": 32
                   },
@@ -2653,7 +2677,10 @@
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('trustedNicName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Resources/deployments",
@@ -2751,7 +2778,10 @@
                             }
                           }
                         ]
-                      }
+                      },
+					  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
                     }
                   ],
                   "outputs": {
