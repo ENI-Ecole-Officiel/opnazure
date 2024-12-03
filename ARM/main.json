@@ -1022,7 +1022,10 @@
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachineName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Resources/deployments",
@@ -1497,7 +1500,10 @@
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachineName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Resources/deployments",
@@ -1976,7 +1982,10 @@
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachineName'))]"
-              ]
+              ],
+			  "tags": {
+        		"user": "[resourceGroup().tags['user']]"
+      		}
             },
             {
               "type": "Microsoft.Resources/deployments",
