@@ -1933,11 +1933,7 @@
                 },
                 "storageProfile": {
                   "osDisk": {
-                    "createOption": "FromImage",
-		    "managedDisk": {
-      			"storageAccountType": "Standard_LRS"
-    		    },
-		    "diskSizeGB": 32
+                    "createOption": "FromImage"
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
