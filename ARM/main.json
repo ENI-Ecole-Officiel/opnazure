@@ -974,6 +974,10 @@
                 "storageProfile": {
                   "osDisk": {
                     "createOption": "FromImage"
+		    "managedDisk": {
+      			"storageAccountType": "Standard_HDD"
+    		    },
+		    "diskSizeGB": 32
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
@@ -1445,6 +1449,10 @@
                 "storageProfile": {
                   "osDisk": {
                     "createOption": "FromImage"
+		    "managedDisk": {
+      			"storageAccountType": "Standard_HDD"
+    		    },
+		    "diskSizeGB": 32
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
@@ -1911,6 +1919,10 @@
                 "storageProfile": {
                   "osDisk": {
                     "createOption": "FromImage"
+		    "managedDisk": {
+      			"storageAccountType": "Standard_HDD"
+    		    },
+		    "diskSizeGB": 32
                   },
                   "imageReference": {
                     "publisher": "thefreebsdfoundation",
@@ -2616,6 +2628,10 @@
                 "storageProfile": {
                   "osDisk": {
                     "createOption": "FromImage"
+		    "managedDisk": {
+      			"storageAccountType": "Standard_HDD"
+    		    },
+		    "diskSizeGB": 32
                   },
                   "imageReference": {
                     "publisher": "MicrosoftWindowsDesktop",
